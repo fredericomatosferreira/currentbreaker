@@ -58,9 +58,11 @@ export default function FoundersPanel() {
       </p>
 
       {/* Tagline */}
-      <p className="text-[15px] text-gray-600 leading-relaxed">
-        {siteConfig.tagline}
-      </p>
+      {siteConfig.tagline && (
+        <p className="text-[15px] text-gray-600 leading-relaxed">
+          {siteConfig.tagline}
+        </p>
+      )}
     </div>
   );
 }

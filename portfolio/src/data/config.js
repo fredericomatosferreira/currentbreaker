@@ -8,7 +8,7 @@
 
 export const siteConfig = {
   companyName: "Against the Current",
-  tagline: "Two operators. Real problems. Shipped fast.",
+  tagline: "",
   location: "The Netherlands",
   totalUsers: 35, // Update this with your total user count across all products
   bio: "A Product Manager and a VP of Operations building tools they actually need.",
@@ -16,14 +16,14 @@ export const siteConfig = {
 
 export const founders = [
   {
-    name: "Wais",
-    photo: "/photos/wais.png",
-    linkedin: "https://www.linkedin.com/in/waispirzad/",
-  },
-  {
     name: "Fred",
     photo: "/photos/fred.png",
     linkedin: "https://www.linkedin.com/in/frederico-matos-ferreira/?locale=en",
+  },
+  {
+    name: "Wais",
+    photo: "/photos/wais.png",
+    linkedin: "https://www.linkedin.com/in/waispirzad/",
   },
 ];
 

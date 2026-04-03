@@ -6,6 +6,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
+import { FiExternalLink } from "react-icons/fi";
 
 export default function ProductCard({ product }) {
   const { name, url, logo, description, accent, accentLight, chartColor, data } =
@@ -42,9 +43,10 @@ export default function ProductCard({ product }) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-[15px] text-gray-900 hover:underline"
+              className="font-bold text-[15px] text-gray-900 hover:underline inline-flex items-center gap-1.5"
             >
               {name}
+              <FiExternalLink size={13} className="text-gray-400" />
             </a>
           </div>
         </div>
@@ -60,7 +62,7 @@ export default function ProductCard({ product }) {
       <p className="text-sm text-gray-500 mb-3 pl-[52px]">{description}</p>
 
       {/* Chart */}
-      <div className="h-[140px] mt-auto">
+      <div className="h-[100px] mt-auto">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}

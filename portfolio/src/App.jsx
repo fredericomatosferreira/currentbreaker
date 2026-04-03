@@ -36,14 +36,14 @@ function App() {
 
       {/* Content */}
       {activeTab === "portfolio" ? (
-        <main className="max-w-[1200px] mx-auto px-6 pb-16">
-          <div className="flex flex-col lg:flex-row gap-16">
+        <main className="max-w-[1500px] mx-auto px-10 pb-16">
+          <div className="flex flex-col lg:flex-row">
             {/* Left Panel */}
             <div className="lg:w-[380px] shrink-0">
               <FoundersPanel />
             </div>
             {/* Right Panel */}
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 lg:ml-36">
               <ProductGrid />
             </div>
           </div>
