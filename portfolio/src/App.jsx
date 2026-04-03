@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#f0f0f0]">
       {/* Navigation */}
-      <nav className="flex justify-center pt-8 pb-12">
+      <nav className="flex justify-center pt-6 pb-8 lg:pt-8 lg:pb-12">
         <div className="flex gap-1 bg-white rounded-full p-1 shadow-sm">
           <button
             onClick={() => setActiveTab("portfolio")}
@@ -36,10 +36,10 @@ function App() {
 
       {/* Content */}
       {activeTab === "portfolio" ? (
-        <main className="max-w-[1500px] mx-auto px-10 pb-16">
+        <main className="max-w-[1500px] mx-auto px-5 pb-12 lg:px-10 lg:pb-16">
           <div className="flex flex-col lg:flex-row">
             {/* Left Panel */}
-            <div className="lg:w-[380px] shrink-0">
+            <div className="lg:w-[380px] shrink-0 mb-10 lg:mb-0">
               <FoundersPanel />
             </div>
             {/* Right Panel */}

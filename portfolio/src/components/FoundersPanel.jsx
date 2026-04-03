@@ -4,14 +4,14 @@ import { founders, siteConfig } from "../data/config";
 function FounderAvatar({ founder }) {
   return (
     <div className="flex flex-col items-center gap-1.5">
-      <div className="w-[180px] h-[180px] rounded-full overflow-hidden bg-gray-200 shadow-md">
+      <div className="w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-full overflow-hidden bg-gray-200 shadow-md">
         <img
           src={founder.photo}
           alt={founder.name}
           className="w-full h-full object-cover"
         />
       </div>
-      <h3 className="text-[22px] font-bold text-gray-900 mt-1">{founder.name}</h3>
+      <h3 className="text-lg lg:text-[22px] font-bold text-gray-900 mt-1">{founder.name}</h3>
       <a
         href={founder.linkedin}
         target="_blank"
@@ -27,21 +27,21 @@ function FounderAvatar({ founder }) {
 
 export default function FoundersPanel() {
   return (
-    <div className="sticky top-8">
+    <div className="lg:sticky lg:top-8 text-center lg:text-left">
       {/* Founders */}
-      <div className="flex gap-10 mb-6">
+      <div className="flex justify-center lg:justify-start gap-8 lg:gap-10 mb-6">
         {founders.map((f) => (
           <FounderAvatar key={f.name} founder={f} />
         ))}
       </div>
 
       {/* Company name */}
-      <h1 className="text-[32px] font-bold text-gray-900 leading-tight">
+      <h1 className="text-[26px] lg:text-[32px] font-bold text-gray-900 leading-tight">
         {siteConfig.companyName}
       </h1>
 
       {/* Location & users */}
-      <div className="flex items-center gap-4 text-sm text-gray-500 mt-3 mb-4">
+      <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 mt-3 mb-4">
         <span className="flex items-center gap-1.5">
           <FaMapMarkerAlt className="text-gray-400" size={13} />
           {siteConfig.location}
