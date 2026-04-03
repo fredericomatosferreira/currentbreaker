@@ -37,7 +37,7 @@ export default function FoundersPanel() {
 
       {/* Company name */}
       <div className="flex items-center justify-center lg:justify-start gap-3 mb-1">
-        <img src="/logo.svg" alt="ATC logo" className="w-9 h-9 lg:w-11 lg:h-11" />
+        <img src="/logo.svg" alt="ATC logo" className="w-10 h-10 lg:w-12 lg:h-12" />
         <h1 className="text-[26px] lg:text-[32px] font-bold text-gray-900 leading-tight">
           {siteConfig.companyName}
         </h1>
