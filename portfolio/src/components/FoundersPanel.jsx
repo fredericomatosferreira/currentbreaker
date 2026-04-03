@@ -27,16 +27,16 @@ function FounderAvatar({ founder }) {
 
 export default function FoundersPanel() {
   return (
-    <div className="lg:sticky lg:top-8 text-center lg:text-left">
+    <div className="lg:sticky lg:top-8 text-center">
       {/* Founders */}
-      <div className="flex justify-center lg:justify-start gap-8 lg:gap-10 mb-6">
+      <div className="flex justify-center gap-8 lg:gap-10 mb-6">
         {founders.map((f) => (
           <FounderAvatar key={f.name} founder={f} />
         ))}
       </div>
 
       {/* Company name */}
-      <div className="flex items-center justify-center lg:justify-start gap-3 mb-1">
+      <div className="flex items-center justify-center gap-3 mb-1">
         <img src="/logo.svg" alt="ATC logo" className="w-[38px] h-[38px] lg:w-[46px] lg:h-[46px]" />
         <h1 className="text-[26px] lg:text-[32px] font-bold text-gray-900 leading-tight">
           {siteConfig.companyName}
@@ -44,7 +44,7 @@ export default function FoundersPanel() {
       </div>
 
       {/* Location & users */}
-      <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 mt-3 mb-4">
+      <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mt-3 mb-4">
         <span className="flex items-center gap-1.5">
           <FaMapMarkerAlt className="text-gray-400" size={13} />
           {siteConfig.location}
